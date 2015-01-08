@@ -11,8 +11,8 @@ script:
  - PATH=$WORKSPACE/ve/bin:/usr/local/bin:$PATH
 
  - if [ ! -d "ve" ]; then
-        virtualenv ve
-fi
+        virtualenv ve ;
+   fi
  - . ve/bin/activate
  - sudo apt-get install -y python-dev
  - sudo apt-get update -qq
