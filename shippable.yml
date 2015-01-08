@@ -8,12 +8,12 @@ python:
  - 2.7
 
 script: 
- - PATH=$WORKSPACE/ve/bin:/usr/local/bin:$PATH
+ #- PATH=$WORKSPACE/ve/bin:/usr/local/bin:$PATH
 
- - if [ ! -d "ve" ]; then
-        virtualenv ve ;
-   fi
- - . ve/bin/activate
+# - if [ ! -d "ve" ]; then
+ #       virtualenv ve ;
+ #  fi
+ #- . ve/bin/activate
  - sudo apt-get install -y python-dev
  - sudo apt-get update -qq
  - sudo apt-get install -qq build-essential libssl-dev swig python-m2crypto python-numpy dnsutils iproute nginx bc
