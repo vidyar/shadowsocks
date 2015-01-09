@@ -28,7 +28,7 @@ coverage erase
 mkdir tmp
 run_test pep8 .
 run_test pyflakes .
-run_test coverage run tests/nose_plugin.py -v
+#run_test coverage run tests/nose_plugin.py -v
 run_test python setup.py sdist
 run_test tests/test_daemon.sh
 run_test python tests/test.py --with-coverage -c tests/aes.json
